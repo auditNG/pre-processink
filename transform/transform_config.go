@@ -4,7 +4,7 @@ type TransformConfig struct {
 	Fim struct {
 		AppGreylist []string
 		FileList    []string
-		SyscallList []int
+		SyscallList []string
 		UserList    []int
 		FieldLists  []struct {
 			Pattern string
