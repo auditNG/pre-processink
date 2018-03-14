@@ -30,14 +30,12 @@ func (es ESSource) Fetch() (string, error) {
 		fmt.Println("Error parsing config: ", err)
 		return "", err
 	}
-	//fmt.Println(uri)
 
 	body, err := jsonparser.GetString(config, "es_config", "payload")
 	if err != nil {
 		fmt.Println("Error parsing config: ", err)
 		return "", err
 	}
-	//fmt.Println("body="+body)
 
 	header := http.Header{
 		"Content-Type": []string{"application/json"},

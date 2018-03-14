@@ -1,14 +1,14 @@
 {
 "fim" : {
     "AppGreyList" : ["vim","cat","tail","head","more","less","nano"],
-    "FileList" : ["name="],
-    "SyscallList" : ["Mac","CentOS"],
+    "FileList" : ["key.pem", "server.xml"],
+    "SyscallList" : [0, 1, 2, 3, 17, 18, 19, 20, 40, 85, 86, 87, 92, 93, 94, 105, 106],
     "UserList" : [500, 1000],
     "FieldLists" : [
-      {"pattern" : "syscall=", "type" : "string"},
-      {"pattern" : "exit=", "type" : "string"},
+      {"pattern" : "syscall=", "type" : "int"},
+      {"pattern" : "exit=", "type" : "int"},
       {"pattern" : "exe=", "type" : "string"},
-      {"pattern" : "user=", "type" : "string"}
+      {"pattern" : "user=", "type" : "int"}
     ]
   }
 }
