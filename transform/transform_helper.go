@@ -16,6 +16,7 @@ func (t TransformHelper) GetStringValue(message string, key string) (string, err
 	data := message
 	start := 0
 	end := 0
+
 	if start = strings.Index(data, key); start < 0 {
 		return "", errors.New("Error parsing")
 	}
@@ -36,5 +37,6 @@ func (t TransformHelper) GetIntValue(message string, key string) (int, error) {
 	if err != nil {
 		return 0, err
 	}
+
 	return strconv.Atoi(val)
 }
